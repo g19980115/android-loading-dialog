@@ -56,7 +56,7 @@ Indeterminate HUD
 KProgressHUD.create(MainActivity.this)
 	.setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
 	.setLabel("Please wait")
-	.setDetailsLabel("Downloading data");
+	.setDetailsLabel("Downloading data")
 	.setCancellable(true)
 	.setAnimationSpeed(2)
 	.setDimAmount(0.5f)
@@ -66,10 +66,10 @@ KProgressHUD.create(MainActivity.this)
 Determinate HUD
 ```java
 KProgressHUD hud = KProgressHUD.create(MainActivity.this)
-					.setStyle(KProgressHUD.Style.ANNULAR_DETERMINATE)
-					.setLabel("Please wait")
-					.setMaxProgress(100)
-					.show();
+	.setStyle(KProgressHUD.Style.ANNULAR_DETERMINATE)
+	.setLabel("Please wait")
+	.setMaxProgress(100)
+	.show();
 hud.setProgress(90);
 ```
 
@@ -79,7 +79,7 @@ ImageView imageView = new ImageView(this);
 imageView.setImageResource(R.mipmap.ic_launcher);
 KProgressHUD.create(MainActivity.this)
 	.setCustomView(imageView)
-    .setLabel("This is a custom view")
+	.setLabel("This is a custom view")
 	.show();
 ```
 The custom view can implement `Determinate` or `Indeterminate`, which make the HUD treats this view like the default determinate or indeterminate implementations, not required.
