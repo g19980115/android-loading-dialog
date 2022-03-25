@@ -1,7 +1,5 @@
 # KProgressHUD
 [![Apache License](https://img.shields.io/badge/license-Apache-blue.svg)](http://opensource.org/licenses/Apache-2.0)
-[ ![Download](https://api.bintray.com/packages/kaopiz/KProgressHUD/KProgressHUD/images/download.svg) ](https://bintray.com/kaopiz/KProgressHUD/KProgressHUD/_latestVersion)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-KProgressHUD-green.svg?style=true)](https://android-arsenal.com/details/1/2975)
 
 An implement of ProgressHUD for Android, similar to MBProgressHUD, SVProgressHUD.
 Inspired by [MBProgressHUD](https://github.com/jdg/MBProgressHUD) for iOS.
@@ -26,12 +24,23 @@ Android 2.3 and later
 ## Adding KProgressHUD to your project
 
 ### Gradle
+
+Include this in your Project `build.gradle`
+```
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
 Include this in your module `build.gradle`
 
 ```
 dependencies {
     // Other dependencies
-    compile 'com.kaopiz:kprogresshud:1.0.2'
+    implementation 'com.github.g19980115:android-loading-dialog:1.0.2'
 }
 ```
 
